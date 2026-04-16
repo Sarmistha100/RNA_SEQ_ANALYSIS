@@ -6,19 +6,19 @@ End-to-end RNA-seq workflow from raw sequencing data to differential gene expres
 
 ## Overview
 
-📌 Overview  
+Overview  
 This project implements a complete, reproducible RNA-seq analysis workflow for *Arabidopsis thaliana*, from raw sequencing data to differential gene expression (DGE) analysis. The pipeline is modular, automated via shell scripts, and runs in a Linux environment (tested on Ubuntu 22.04).
 
 This workflow was developed as part of a learning exercise based on a published protocol from : https://doi.org/10.1002/cpz1.1054. While inspired by this reference, all analyses were independently executed, customized, and validated. The results presented here are generated from real data and reflect a fully functional end-to-end implementation.
 ---
 
-## 🧬 Workflow
+## Workflow
 
 ```
 Raw FASTQ → FastQC → Trimmomatic → HISAT2 Alignment → SAMtools → featureCounts → DESeq2 DGE
 ```
 
-## ⚙️ Software Requirements
+## Software Requirements
 
 | Tool                    | Version | Installation                   |
 | ----------------------- | ------- | ------------------------------ |
@@ -84,7 +84,7 @@ SRR10207218,treated
 
 ---
 
-## 🌱 Reference Genome & Annotation
+## Reference Genome & Annotation
 
 Downloaded from Ensembl Plants (TAIR10):
 
@@ -110,7 +110,7 @@ gunzip Arabidopsis_thaliana.TAIR10.57.gtf.gz
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project_RNA_SEQ/
@@ -127,7 +127,7 @@ project_RNA_SEQ/
 
 ---
 
-## 🚀 Pipeline Execution
+## Pipeline Execution
 
 Run the complete workflow:
 
@@ -137,7 +137,7 @@ bash run_all.sh
 
 ---
 
-## 📊 Results
+## Results
 
 Outputs (in `results/`):
 
@@ -149,7 +149,7 @@ Outputs (in `results/`):
 
 ---
 
-## 🔁 Reproducibility
+## Reproducibility
 
 All steps are automated and reproducible:
 
@@ -159,14 +159,14 @@ bash run_all.sh
 
 ---
 
-## 📚 References
+## References
 
 * Villalobos-Escobedo et al. (2024). RNA-Seq Data Analysis: A Practical Guide for Model and Non-Model Organisms. *Current Protocols*.
 * Love et al. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology*.
 
 ---
 
-## 📝 Notes
+## Notes
 **Learning implementation** → **Production-ready results**:
 - Automated pipeline execution
 - DESeq2 integration 
@@ -174,7 +174,7 @@ bash run_all.sh
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Sarmistha Nayak**
 Bioinformatics | Genomics | RNA-seq Analysis
