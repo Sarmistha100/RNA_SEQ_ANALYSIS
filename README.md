@@ -6,8 +6,7 @@
 
 ## 📌 Overview
 
-This project implements a complete, reproducible RNA-seq analysis workflow for *Arabidopsis thaliana*, from raw sequencing data to differential gene expression analysis. The pipeline is modular, automated via shell scripts, and runs in a Linux environment (tested on Ubuntu).
-
+This project implements a complete, reproducible RNA-seq analysis workflow for Arabidopsis thaliana, from raw sequencing data to differential gene expression (DGE) analysis. Designed as a hands-on learning implementation of the protocol from Villalobos-Escobedo et al. (2024), I executed the full pipeline with genuine results from PRJNA575031 data.
 ---
 
 ## 🧬 Workflow
@@ -15,12 +14,6 @@ This project implements a complete, reproducible RNA-seq analysis workflow for *
 ```
 Raw FASTQ → FastQC → Trimmomatic → HISAT2 Alignment → SAMtools → featureCounts → DESeq2 DGE
 ```
-
-### 🔽 Workflow Diagram
-
-![Workflow](workflow.png)
-
----
 
 ## ⚙️ Software Requirements
 
@@ -52,7 +45,7 @@ install.packages(c("ggplot2", "pheatmap"))
 
 ---
 
-## 📥 Data Download
+## Data Download
 
 Dataset: **NCBI SRA – PRJNA575031**
 
@@ -117,7 +110,7 @@ gunzip Arabidopsis_thaliana.TAIR10.57.gtf.gz
 ## 📁 Project Structure
 
 ```
-project_2025/
+project_RNA_SEQ/
 ├── scripts/
 ├── raw_data/                      
 ├── trimming_data/
@@ -171,16 +164,10 @@ bash run_all.sh
 ---
 
 ## 📝 Notes
-
-This implementation extends the published protocol with:
-
-* Automated shell-based pipeline
-* Integration of DESeq2
-* Structured and reproducible workflow
-
-## 📝 Notes
-
-This project demonstrates a complete RNA-seq workflow implementation. The included results (DEG tables) confirm successful processing from raw sequencing data to differential gene expression analysis.
+**Learning implementation** → **Production-ready results**:
+- Automated pipeline execution
+- DESeq2 integration 
+- Reproducible via `bash run_all.sh`
 
 ---
 
