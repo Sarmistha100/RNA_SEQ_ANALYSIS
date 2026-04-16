@@ -1,12 +1,15 @@
 # RNA-seq Analysis Pipeline (Arabidopsis thaliana)
 
-🚀 End-to-end RNA-seq workflow from raw sequencing data to differential gene expression (DGE) analysis.
+End-to-end RNA-seq workflow from raw sequencing data to differential gene expression (DGE) analysis.
 
 ---
 
-## 📌 Overview
+## Overview
 
-This project implements a complete, reproducible RNA-seq analysis workflow for Arabidopsis thaliana, from raw sequencing data to differential gene expression (DGE) analysis. Designed as a hands-on learning implementation of the protocol from Villalobos-Escobedo et al. (2024), I executed the full pipeline with genuine results from PRJNA575031 data.
+📌 Overview  
+This project implements a complete, reproducible RNA-seq analysis workflow for *Arabidopsis thaliana*, from raw sequencing data to differential gene expression (DGE) analysis. The pipeline is modular, automated via shell scripts, and runs in a Linux environment (tested on Ubuntu 22.04).
+
+This workflow was developed as part of a learning exercise based on a published protocol from : https://doi.org/10.1002/cpz1.1054. While inspired by this reference, all analyses were independently executed, customized, and validated. The results presented here are generated from real data and reflect a fully functional end-to-end implementation.
 ---
 
 ## 🧬 Workflow
